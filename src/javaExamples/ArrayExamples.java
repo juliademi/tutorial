@@ -1,13 +1,8 @@
 package javaExamples;
 
-import java.lang.reflect.Array;
 
 public class ArrayExamples {
 
-    /**
-     * Sum the values
-     * @param
-     */
 
     public static int sumValues(int[] my_array){
         int sum = 0;
@@ -39,11 +34,11 @@ public class ArrayExamples {
 
 
     public static void main(String[] args) {
-        int testArray[] =  {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int testarr [] =  {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
-        System.out.println("Sum of the ints in array: " + sumValues(testArray));
-        System.out.println("Contains number: " + containsNr(testArray, 10));
-        System.out.println("The index is: " + findIndex(testArray, 2));
+        System.out.println("Sum of the ints in array: " + sumValues(testarr));
+        System.out.println("Contains number: " + containsNr(testarr, 10));
+        System.out.println("The index is: " + findIndex(testarr, 2));
 
 
 

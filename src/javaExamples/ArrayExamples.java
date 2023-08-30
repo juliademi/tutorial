@@ -6,7 +6,7 @@ public class ArrayExamples {
 
     /**
      * Sum the values
-     * @param args
+     * @param
      */
 
     public static int sumValues(int[] my_array){

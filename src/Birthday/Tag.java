@@ -49,7 +49,7 @@ class Tag
     }
 
     /**
-     * @see Object.hashCode()
+     *
      */
     public int hashCode()
     {
@@ -57,7 +57,7 @@ class Tag
     }
 
     /**
-     * @see Object.toString()
+     *
      */
     public String toString()
     {

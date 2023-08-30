@@ -1,3 +1,4 @@
+package javaExamples;
 
 /**
  * Waage
@@ -10,7 +11,7 @@ public class Waage {
     private int _derzeitigesGewicht;
     private int _minGewicht;
     private int _maxGewicht;
-    private int _trend;
+    private int _trends;
     private int _zaehler;
     private int _durchschnittsGewicht;
     private int _summe;
@@ -36,7 +37,7 @@ public class Waage {
         _letztesGewicht = _derzeitigesGewicht;
         _derzeitigesGewicht = neuesGewicht;
 
-        _trend = gibTrend();
+        _trends = gibTrend();
         gibMinimalgewicht();
         gibMaximalgewicht();
         gibDurchschnittsgewicht();

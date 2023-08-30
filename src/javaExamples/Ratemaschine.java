@@ -1,5 +1,6 @@
+package javaExamples;
 
-    /**
+/**
      * Bei Exemplaren dieser Klasse soll der Klient eine ganze Zahl raten können.
      *
      * @author Julia

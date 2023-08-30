@@ -1,3 +1,4 @@
+package javaExamples;
 
 /**
  * Eine Klasse, die Bankkonten modelliert.

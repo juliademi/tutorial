@@ -5,8 +5,7 @@
  * @author Julia
  * @version neue, selbstgeschrieben
  */
-public class Waage
-{
+public class Waage {
     private int _letztesGewicht;
     private int _derzeitigesGewicht;
     private int _minGewicht;
@@ -16,8 +15,7 @@ public class Waage
     private int _durchschnittsGewicht;
     private int _summe;
 
-    public Waage (int aktuellesGewicht)
-    {
+    public Waage(int aktuellesGewicht) {
         _letztesGewicht = aktuellesGewicht;
         _derzeitigesGewicht = aktuellesGewicht;
         _minGewicht = aktuellesGewicht;
@@ -32,9 +30,8 @@ public class Waage
      * Das letzte Gewicht fliegt immer raus, das derzeitige Gewicht wird zu letzten Gewicht,
      * bevor das neue Gewicht zum derzeitigen Gewicht überschrieben wird.
      */
-    public void registriere (int neuesGewicht)
-    {
-        _zaehler = _zaehler +1;
+    public void registriere(int neuesGewicht) {
+        _zaehler = _zaehler + 1;
 
         _letztesGewicht = _derzeitigesGewicht;
         _derzeitigesGewicht = neuesGewicht;
@@ -45,46 +42,35 @@ public class Waage
         gibDurchschnittsgewicht();
     }
 
-    public int gibTrend()
-    {
+    public int gibTrend() {
         int ergebnis;
 
-        if (_derzeitigesGewicht < _letztesGewicht)
-        {
+        if (_derzeitigesGewicht < _letztesGewicht) {
             ergebnis = -1;
-        }
-        else if (_derzeitigesGewicht > _letztesGewicht)
-        {
+        } else if (_derzeitigesGewicht > _letztesGewicht) {
             ergebnis = +1;
-        }
-        else
-        {
+        } else {
             ergebnis = 0;
         }
 
         return ergebnis;
     }
 
-    public int gibMinimalgewicht()
-    {
-        if(_derzeitigesGewicht < _minGewicht)
-        {
+    public int gibMinimalgewicht() {
+        if (_derzeitigesGewicht < _minGewicht) {
             _minGewicht = _derzeitigesGewicht;
         }
         return _minGewicht;
     }
 
-    public int gibMaximalgewicht()
-    {
-        if (_derzeitigesGewicht > _maxGewicht)
-        {
+    public int gibMaximalgewicht() {
+        if (_derzeitigesGewicht > _maxGewicht) {
             _maxGewicht = _derzeitigesGewicht;
         }
         return _maxGewicht;
     }
 
-    public int gibDurchschnittsgewicht()
-    {
+    public int gibDurchschnittsgewicht() {
         _summe = _summe + _derzeitigesGewicht;
         _durchschnittsGewicht = _summe / _zaehler;
 

@@ -20,7 +20,7 @@ public class Konto
     //entweder einen Mathodenaufruf zu machen oder eine IF-Anweisung zu implementieren.
     public Konto(int kontonummer, int dispo)
     {
-        _kontonummer = kontonummer;
+         _kontonummer = kontonummer;
         _saldo = 10;
         setzeNeuenDispo(dispo);
     }
